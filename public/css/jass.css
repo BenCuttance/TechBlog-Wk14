@@ -364,6 +364,9 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   font-size: 16px;
   color: #1a1a1a;
+  list-style-type: none;
+  text-decoration: none;
+  
 }
 
 h1,
@@ -411,6 +414,7 @@ ol,
 dl {
   margin-top: 0;
   margin-bottom: 1rem;
+  
 }
 
 label {
@@ -987,6 +991,7 @@ a:hover {
   color: #1a1a1a;
   background-color: #aeaeae;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  
 }
 
 .btn:hover {

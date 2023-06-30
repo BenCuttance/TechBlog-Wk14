@@ -4,18 +4,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>User Registry</title>
+  <title>Tech Blog</title>
   <link rel="stylesheet" href="/css/jass.css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-  <header class="display-flex justify-space-between align-center p-2">
+  <header class="flex-column justify-space-around">
     <h1 id="header" >
       Tech Blog
+      {{#if logged_in}}
+      <h3> Welcome, {{name}}</h3>
+      {{/if}}
     </h1>
+  
     {{#if logged_in}}
+      
     <nav>
       <button class="btn" id="logout">logout</button>
+     {{!-- <li>
+      <a class="btn" href="/">Home</a>
+     </li> --}}
+     <li>
+      <a class="btn" href="/messageboard">Message Board</a>
+     </li>
     </nav>
     {{/if}}
   </header>

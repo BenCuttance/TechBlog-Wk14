@@ -13,7 +13,11 @@ const signupFormHandler = async (event) => {
       });
   
       if (response.ok) {
+        const newUser = await  {
+          method: 'P'
+        }
         document.location.replace('/');
+
       } else {
         // console.log(err)
         alert('Failed to sign up.');
